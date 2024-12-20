@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  background-color: #fff;
+  background-color: #f5f7fa;
   padding: 20px;
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -19,18 +19,22 @@ header {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  font-weight: normal;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  font-weight: bold;
   font-size: 24px;
 }
 
 .logo img {
   height: 40px;
   margin-right: 10px;
+}
+
+.logo span {
+  font-weight: bold;
 }
 
 .nav-links {
@@ -44,18 +48,36 @@ header {
 .nav-links a {
   text-decoration: none;
   color: #000;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 .auth-links {
   display: flex;
-  gap: 10px;
+  gap: 15px;
+  align-items: center;
+}
+
+.auth-links .login,
+.auth-links .signup {
+  font-weight: normal;
+}
+
+.auth-links .login {
+  color: #28a745;
+}
+
+.auth-links .signup {
+  background-color: #28a745;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: normal;
 }
 
 .auth-links a {
   text-decoration: none;
   color: #28a745;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 .auth-links .signup {
@@ -114,17 +136,66 @@ button:hover {
 .community-section {
   display: flex;
   justify-content: center;
-  padding: 50px;
+  padding: 50px 0;
   background-color: #ffffff;
 }
 
 .community-content {
-  max-width: 60%;
+  text-align: center;
+  width: 1440px;
+}
+
+.community-content h2,
+.community-content p.suitable-intro {
+  text-align: center;
+  margin: 0 auto;
 }
 
 .community-content h2 {
   font-size: 2.5em;
   color: #333;
+}
+
+.suitable-for {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 144px;
+  gap: 100px;
+}
+
+.suitable-item {
+  width: 30%;
+  height: 280px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 24px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.suitable-item .icon {
+  width: 65px;
+  height: 56px;
+  margin-bottom: 20px;
+}
+
+.suitable-item h3 {
+  font-size: 1.5em;
+  color: #4d4d4d;
+}
+
+.suitable-item p {
+  color: #666;
+}
+
+.suitable-intro {
+  color: grey;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .suitable-for {
@@ -137,15 +208,6 @@ button:hover {
   width: 30%;
 }
 
-.suitable-item h3 {
-  font-size: 1.5em;
-  color: #4caf50;
-}
-
-.suitable-item p {
-  color: #666;
-}
-
 .spending-section {
   display: flex;
   justify-content: center;
@@ -156,13 +218,14 @@ button:hover {
 
 .spending-content {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   align-items: center;
   max-width: 1200px;
 }
 
 .spending-image {
   flex: 1;
+  margin-right: 20px;
 }
 
 .spending-image img {
@@ -201,6 +264,7 @@ button:hover {
 .learn-more:hover {
   background-color: #45a049;
 }
+
 .design-section {
   display: flex;
   justify-content: center;
@@ -211,6 +275,7 @@ button:hover {
 
 .design-content {
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
   max-width: 1200px;
   width: 100%;
@@ -219,7 +284,7 @@ button:hover {
 
 .design-image {
   flex: 1;
-  max-width: 50%;
+  margin-left: 20px;
 }
 
 .design-image img {
@@ -229,7 +294,6 @@ button:hover {
 
 .design-text {
   flex: 1;
-  max-width: 50%;
   text-align: left;
 }
 
@@ -259,3 +323,53 @@ button:hover {
   background-color: #45a049;
 }
 
+.demo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: #ffffff;
+}
+
+.demo-box {
+  width: 1200px;
+  height: 364px;
+  padding: 64px;
+  text-align: center;
+  background-color: #f5f7fa;
+  border-radius: 8px;
+}
+
+.demo-box p {
+  margin-bottom: 32px;
+  font-size: 64px;
+  color: #333;
+  font-weight: 600;
+}
+
+.demo-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #4caf4f;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.demo-button:hover {
+  background-color: #4caf4f;
+}
+
+footer {
+  background-color: #263238;
+  color: white;
+  text-align: center;
+  padding: 64px 165px;
+  font-size: 14px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
